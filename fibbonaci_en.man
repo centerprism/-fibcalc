@@ -1,0 +1,28 @@
+.TH fibonacci 1 "8 June 2010"
+.SH NAME
+fibonacci \- Compute series of fibbonaci numbers
+.SH SYNOPSIS
+\fBfibonacci\fP [-f first_seed second_seed] [-d]
+number_of_calculations
+.SH DESCRIPTION
+\fBfibonacci\fP computes the nth number given by
+the fibonacci numbers sequence. 
+.SS Options
+.TP
+\fB-f\fP first_seed second_seed
+Special seeds (the first two numbers of the
+series) 
+.TP
+\fB-d\fP
+\fBDetailed output\fP \- This option writes to
+the output all the numbers of the sequence.
+.SH EXAMPLES
+\'fibonacci 7\' outputs the 7th number of the
+fibonacci series, wich is 8.
+\'fibonacci -f 2 5 -d 4\' will compute the
+forth number of the fibonacci series being
+the first two numbers added 2 and 5. The result
+is 12 as the 4rd number is calculated adding
+the 2nd and the 3rd number (5+7).
+.SH "SEE ALSO"
+bc(1)
